@@ -3,11 +3,12 @@ import { theme } from "../../../configs";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
   box-sizing: border-box;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background-color: ${theme.backgroundColor};
 `;
 
