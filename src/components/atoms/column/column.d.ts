@@ -1,5 +1,7 @@
 export interface ColumnProps {
   backgroundColor?: string;
+  padding?: string;
+  margin?: string;
     xs?: number;
     sm?: number;
     md?: number;

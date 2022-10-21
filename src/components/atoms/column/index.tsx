@@ -28,7 +28,10 @@ const calcWidth = (props: ColumnProps, size: string = "xs") => {
 const Column = styled.div<ColumnProps>`
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   font-weight: bold;
+  padding: ${({ padding }) => padding || 0};
+  margin: ${({ margin }) => margin || 0};
   align-items: ${({ alignItems }) => alignItems || "flex-start"};
   justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   width: calc(${(props) => calcWidth(props, "xs")}%);
@@ -42,20 +45,6 @@ const Column = styled.div<ColumnProps>`
   }
   @media (min-width: 768px) {
     width: calc(${(props) => calcWidth(props, "md")}%);
-    &:first-child {
-      padding-right: 8px;
-    }
-    &:last-child {
-      padding-left: 8px;
-    }
-    &:only-child {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-    }
-    &:not(:first-child):not(:last-child) {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
   }
   @media (min-width: 992px) {
     width: calc(${(props) => calcWidth(props, "lg")}%);

@@ -9,7 +9,7 @@ const Container = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: ${theme.backgroundColor};
+  background-color: ${theme.colors.background};
 `;
 
 export default Container;

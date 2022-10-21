@@ -1,3 +1,10 @@
 export interface ThemeProps {
-    backgroundColor: string
+    colors: {
+        background: string;
+        primary: string;
+        text: {
+            primary: string;
+            secondary: string;
+        }
+    }
 };
