@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import loginHero from "../../../assets/imgs/login-hero.svg";
-import { Column, Container, Input, Row } from "../../../components/atoms";
+import {
+  Button,
+  Column,
+  Container,
+  Input,
+  Row,
+} from "../../../components/atoms";
 import { theme } from "../../../configs";
 
 const LoginPage: React.FC = () => {
@@ -13,9 +19,23 @@ const LoginPage: React.FC = () => {
   return (
     <Container>
       <Row height="100%">
-        <Column padding="16px" md={4}>
-          <h1>Login Screen</h1>
-          <Input type="password" value={cpf} onChange={handleCpf} />
+        <Column padding="128px" justifyContent="center" md={4}>
+          <h3>To access the dashboard, please autenthicate first.</h3>
+          <Input
+            type="email"
+            placeholder="E-mail"
+            value={cpf}
+            onChange={handleCpf}
+          />
+          <Input
+            type="password"
+            placeholder="Senha"
+            value={cpf}
+            onChange={handleCpf}
+          />
+          <Button color="primary" fullWidth>
+            Acessar
+          </Button>
         </Column>
         <Column
           md={8}

@@ -30,6 +30,7 @@ const Column = styled.div<ColumnProps>`
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  gap: 16px;
   padding: ${({ padding }) => padding || 0};
   margin: ${({ margin }) => margin || 0};
   align-items: ${({ alignItems }) => alignItems || "flex-start"};
